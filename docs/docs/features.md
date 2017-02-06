@@ -72,7 +72,7 @@ Promise.promisifyAll(require("mysql/lib/Pool").prototype);
 ```js
 // Mongoose
 var Promise = require("bluebird");
-Promise.promisifyAll(require("mongoose"));
+require('mongoose').Promise = require('bluebird');
 ```
 
 ```js
